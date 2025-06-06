@@ -1,0 +1,6 @@
+学籍番号: 25745121
+GitHub: https://github.com/gk345-aiit/kadai4.git
+説明:
+check-gcd.sh: 本体
+test-random-check-gcd.sh: ランダム自然数でチェック(正し結果の確認は数値であるか正規でチェックしているので微妙)
+test-manual-check-gcd.sh: 引数でチェック 
