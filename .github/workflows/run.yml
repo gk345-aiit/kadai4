@@ -1,7 +1,22 @@
-name: actions-trial
-on: [push]
+name: test check-gcd
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
- check-bats-version:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "first action!"
+      - name: CheckOut
+        uses: actions/checkout@v3
+
+      - name: Permission Setting
+        run: chmod +x test-manual-check-gcd.sh test-rondom-check-gcd.sh check-gcd
+
+      - name: Run test-manual-check-gcd
+        run: ./test-check-gcd.sh
+
+      - name: Run test-rondom-check-gcd
+        run: ./test-random-check-gcd.sh
