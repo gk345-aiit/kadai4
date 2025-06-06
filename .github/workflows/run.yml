@@ -16,7 +16,7 @@ jobs:
         run: chmod +x test-manual-check-gcd.sh test-random-check-gcd.sh check-gcd.sh
 
       - name: Run test-manual-check-gcd
-        run: ./test-check-gcd.sh
+        run: ./test-manual-check-gcd.sh
 
       - name: Run test-rondom-check-gcd
         run: ./test-random-check-gcd.sh
