@@ -1,7 +1,5 @@
 #!/bin/bash
 
-exit 1
-
 # ランダム値を生成
 number1=$((RANDOM % 9 + 1))
 number2=$((RANDOM % 9 + 1))
